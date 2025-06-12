@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nosso 12/06 - Dia dos Namorados</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Header com frase principal -->
+    <header class="hero" style="font-family: 'Great Vibes', cursive;">
+      <h1 class="main-title" style="font-family: 'Great Vibes', cursive;">
+        Nosso capítulo especial...
+      </h1>
+      <div class="hearts-decoration" style="font-family: 'Montserrat', sans-serif;">
+        <span class="heart">❤️</span>
+        <span class="heart">💕</span>
+        <span class="heart">❤️</span>
+      </div>
+    </header>
+
+    <!-- Seção principal com texto emocional -->
+    <main class="main-content" style="font-family: 'Montserrat', sans-serif;">
+      <section class="love-message" style="font-family: 'Montserrat', sans-serif;">
+        <div class="message-container">
+          <p>
+            São tantas lembranças boas, que até fica difícil escolher uma só pra contar. Mas o que todas têm em comum é você, sempre ali, comigo, mesmo nos meus momentos mais confusos.
+          </p>
+
+          <p>
+            Eu sei que, muitas vezes, fui um caos. Talvez uma incógnita difícil de decifrar. Mas você nunca desistiu de mim. Pelo contrário, foi me desvendando com paciência, carinho e um amor que eu nem sabia que merecia. Você me ajudou e ainda me ajuda, a entender quem eu sou, com todas as minhas falhas e inseguranças.
+          </p>
+
+          <p>
+            Você chegou em um dos momentos mais complicados da minha vida. E mesmo com todas as minhas dificuldades, nunca soltou a minha mão. Tem sido meu refúgio nos dias difíceis, minha paz no meio da bagunça, minha motivação pra ser alguém melhor.
+          </p>
+
+          <p>
+            Obrigado por ser meu porto seguro, minha amiga, minha parceira, meu amor… meu lar. Te amo com tudo o que sou e com tudo o que ainda vou ser. Que esse seja só o nosso primeiro 12/06 de muitos que ainda virão.
+          </p>
+        </div>
+      </section>
+
+      <!-- Galeria de fotos -->
+      <section class="photo-gallery" style="font-family: 'Cormorant Garamond', serif;">
+        <h2 class="gallery-title" style="font-family: 'Cormorant Garamond', serif;">
+          Nossas Memórias
+        </h2>
+        <div class="gallery-container">
+          <div class="photo-item">
+            <img src="imagens/foto1.jpg" alt="Nossa primeira memória" loading="lazy" />
+            <div class="photo-overlay">
+              <span class="photo-number">1</span>
+            </div>
+          </div>
+          <div class="photo-item">
+            <img src="imagens/foto2.jpg" alt="Momento especial" loading="lazy" />
+            <div class="photo-overlay">
+              <span class="photo-number">2</span>
+            </div>
+          </div>
+          <div class="photo-item">
+            <img src="imagens/foto3.jpg" alt="Lembrança querida" loading="lazy" />
+            <div class="photo-overlay">
+              <span class="photo-number">3</span>
+            </div>
+          </div>
+          <div class="photo-item">
+            <img src="imagens/foto4.jpg" alt="Nosso amor" loading="lazy" />
+            <div class="photo-overlay">
+              <span class="photo-number">4</span>
+            </div>
+          </div>
+          <div class="photo-item">
+            <img src="imagens/foto5.jpg" alt="Juntos sempre" loading="lazy" />
+            <div class="photo-overlay">
+              <span class="photo-number">5</span>
+            </div>
+          </div>
+          <div class="photo-item">
+            <img src="imagens/foto6.jpg" alt="Para sempre" loading="lazy" />
+            <div class="photo-overlay">
+              <span class="photo-number">6</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer" style="font-family: 'Montserrat', sans-serif;">
+      <p class="footer-message">Com todo o amor do mundo, eu. ❤️</p>
+      <div class="footer-decoration">
+        <span class="small-heart">💕</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modal para visualizar fotos -->
+  <div id="photoModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImage" src="" alt="Foto ampliada" />
+      <div class="modal-navigation">
+        <button id="prevBtn" class="nav-btn">❮</button>
+        <button id="nextBtn" class="nav-btn">❯</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controle de música de fundo -->
+  <div class="music-control">
+    <button id="musicToggle" class="music-btn" title="Tocar/Pausar música">
+      <span id="musicIcon">🎵</span>
+    </button>
+    <audio id="backgroundMusic" loop>
+      <source src="audio/romantic-music.mp3" type="audio/mpeg" />
+      <source src="audio/romantic-music.ogg" type="audio/ogg" />
+      Seu navegador não suporta o elemento de áudio.
+    </audio>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
